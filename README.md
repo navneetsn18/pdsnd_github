@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+6th May,2020
 
 ### Project Title
-Replace the Project Title
+BikeShare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project provides quick statistical analysis for bikeshare data based on user input and choices. 
+This project was a part of udacity Programming for Data Science with Python Nanodegree Program.
 
 ### Files used
-Include the files used
+1 python file : bikeshare.py
+3 csv files : chicago.csv, new_york_city.csv, washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity
 
