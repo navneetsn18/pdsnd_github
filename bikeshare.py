@@ -1,5 +1,4 @@
-#This is the main python script for the documentation branch
-
+#This is the main python script and require time,pandas,nupy and datetime to be installed first to run this.
 
 import time
 import pandas as pd
