@@ -180,6 +180,27 @@ def user_stats(df):
     print('-'*40)
     
 
+def raw_data(df):
+    """
+    Asks user if they want to see 5 lines of raw data.
+    Returns the 5 lines of raw data if user inputs `yes`. Iterate until user response with a `no`
+
+    """
+
+    count = 0
+    answer = input('Would you like to see 5 lines of raw data? Enter y for yes or n for no: ').strip().lower()
+    while True:
+        if(answer=='y'):
+            for i in range(5):
+                print('-'*40)
+                print("Data in row {}.".format(count+1))
+                print(df.iloc[count,:])
+                count+=1
+                print('-'*40)
+            answer = input('Would you like to see 5 lines of more raw data? Enter y for yes or n for no: ').strip().lower()
+        else:
+            break
+
 
 def main():
     while True:
@@ -190,6 +211,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        raw_data(df)
         print("If you found a 0 as result or Not Assigned it means the data is not available.")
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
